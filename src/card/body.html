@@ -1,0 +1,75 @@
+
+<div id="cover" role="dialog" aria-label="표지" style="--cv:url(cover.jpg)">
+  <div class="bgblur"></div>
+  <div class="art">
+    <h1 class="sr-only">청자골 아학-교과서 어휘력 카드</h1>
+    <div class="grade"><b id="coverGrade"></b><small>학년</small></div>
+    <div class="school"><b id="coverSchool"></b><span id="coverSub"></span></div>
+  </div>
+  <button id="coverGo">학습 시작 ▶</button>
+  <button id="cfgReset" type="button">학급 설정 바꾸기</button>
+</div>
+<header>
+  <div class="brandRow">
+    <div class="brand" title="표지 보기"><h1>청자골 아학-교과서 어휘력 카드</h1><span id="brandSub"></span></div>
+    <span id="pvChip" class="pv" hidden>미리보기 · 학습 기록이 저장되지 않아요</span>
+  </div>
+  <div class="filters">
+    <div class="fg"><label>교과</label><div class="seg" id="fSub"></div></div>
+    <div class="fg"><label>단원</label><div class="seg" id="fUnit"></div></div>
+  </div>
+</header>
+<main>
+  <aside>
+    <div class="sideTop">
+      <input id="q" type="search" placeholder="어휘 검색" autocomplete="off">
+      <span class="cnt" id="cnt"></span>
+    </div>
+    <ul id="list"></ul>
+  </aside>
+  <section>
+    <div class="topbar">
+      <button id="toggleSide">목록</button>
+      <div class="crumb" id="crumb"></div>
+      <div class="pos" id="pos"></div>
+    </div>
+    <div class="prog"><i id="bar"></i></div>
+    <div class="stage">
+      <div class="card" id="card">
+        <div class="inner">
+          <div class="face front" id="front"></div>
+          <div class="face back" id="back"></div>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <button class="big" id="prev">‹ 이전</button>
+      <button class="reveal" id="reveal">뜻 보기</button>
+      <button class="big" id="next">다음 ›</button>
+    </div>
+    <div id="quiz">
+      <div class="qHead">
+        <button id="qSide">목록</button>
+        <div class="crumb" id="qCrumb"></div>
+        <div class="pos" id="qPos"></div>
+        <button id="qExit">✕ 나가기</button>
+      </div>
+      <div class="prog"><i id="qBar"></i></div>
+      <div id="qBody"><div id="qMain"></div></div>
+      <div class="nav" id="qNav" style="display:none"><button class="big" id="qNext">다음 문제 ›</button></div>
+    </div>
+  </section>
+</main>
+<div id="setup" hidden>
+  <div class="suBox">
+    <h2>어휘카드 학급 설정</h2>
+    <p class="note">선생님이 보내 준 <b>학급 링크(QR)</b>로 열면 이 화면 없이 바로 시작돼요.<br>링크가 없으면 아래에서 직접 골라 주세요.</p>
+    <label class="fl">학교 이름<input id="suSchool" maxlength="30" placeholder="예: 청자골초등학교" autocomplete="off"></label>
+    <label class="fl">학급(반)<input id="suCls" maxlength="20" placeholder="예: 2반" autocomplete="off"></label>
+    <div class="fl">학년<div class="seg" id="suG"></div></div>
+    <div class="fl">학기<div class="seg" id="suS"></div></div>
+    <div class="fl">과목 · 출판사<div id="suSubs"></div></div>
+    <div class="suWarn" id="suWarn" role="alert"></div>
+    <button class="suGo" id="suGo" type="button">학습 시작</button>
+  </div>
+</div>

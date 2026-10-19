@@ -1,0 +1,31 @@
+{
+ "name": "청자골 아학 어휘력",
+ "short_name": "아학 어휘력",
+ "description": "초등 3~6학년 교과서 어휘력 교재",
+ "lang": "ko",
+ "dir": "ltr",
+ "display": "standalone",
+ "orientation": "any",
+ "background_color": "#EEF4F1",
+ "theme_color": "#2E7D6E",
+ "scope": "./",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "start_url": "./"
+}

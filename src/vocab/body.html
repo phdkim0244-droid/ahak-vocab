@@ -1,0 +1,34 @@
+
+
+<div class="app">
+  <header>
+    <div class="brand"><h1>청자골 아학</h1><span class="tag">교과서 어휘력편</span><span class="grades">초등 3~6학년</span><button class="ixbtn" id="ixBtn" type="button">어휘 찾기</button></div>
+    <div class="filters" role="group" aria-label="교재 선택">
+      <label for="selGrade">학년<select id="selGrade"></select></label>
+      <label for="selSem">학기<select id="selSem"></select></label>
+      <label for="selSubject">교과<select id="selSubject"></select></label>
+      <label for="selPub">출판사<select id="selPub"></select></label>
+      <label for="selUnit">단원<select id="selUnit"></select></label>
+    </div>
+  </header>
+  <main>
+    <section class="left" aria-label="단원 어휘">
+      <div class="listwrap">
+        <div class="listhead"><small id="unitSub"></small><div class="row1"><b id="unitName">단원</b><span id="cnt"></span></div></div>
+        <ul id="vocab"></ul>
+      </div>
+      <div class="bell">
+        <div class="t"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a1.6 1.6 0 0 1 1.6 1.6v.5A6.5 6.5 0 0 1 18.5 10.5v3.2l1.7 2.6a1 1 0 0 1-.84 1.55H4.64a1 1 0 0 1-.84-1.55l1.7-2.6v-3.2a6.5 6.5 0 0 1 4.9-6.4v-.5A1.6 1.6 0 0 1 12 2zm-2.2 17h4.4a2.2 2.2 0 0 1-4.4 0z"/></svg>어휘 골든벨</div>
+        <p id="bellInfo"></p>
+        <button class="btn gold" id="bellBtn" type="button">도전하기</button>
+      </div>
+    </section>
+    <section class="detail" id="detail" aria-live="polite"></section>
+  </main>
+</div>
+<div class="ov" id="ixov" hidden><div class="ix" id="ixp" role="dialog" aria-modal="true" aria-label="전체 어휘 색인">
+  <div class="ixhead"><div class="r"><h2>전체 어휘 색인</h2><button class="btn ghost" id="ixClose" type="button" style="min-height:38px">닫기</button></div>
+  <input id="ixq" type="search" placeholder="어휘나 한자 검색 (예: 지도, 地)" autocomplete="off"><div class="muted" id="ixsum" style="font-size:12px"></div></div>
+  <div class="ixbody" id="ixbody"></div></div></div>
+<div class="ov" id="ov" hidden><div class="quiz" id="quiz" role="dialog" aria-modal="true" aria-label="어휘 골든벨"></div></div>
+
